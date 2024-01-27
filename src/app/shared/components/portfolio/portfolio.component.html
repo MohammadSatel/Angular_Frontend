@@ -1,0 +1,18 @@
+<section class="portfolio">
+<div class="container">
+  <div class="title-wrapper container">
+    <div>
+      <p class="section-subtitle"> About Us</p>
+      <h2 class="h2 section-title">Best Cars, Best Prices</h2>
+    </div>
+  </div>
+  <div class="slider">
+    <ul class="slider-container">
+      <app-project
+      *ngFor="let project of projects()"
+      [project]="project"
+      ></app-project>
+    </ul>
+  </div>
+</div>
+</section>
